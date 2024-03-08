@@ -1,0 +1,297 @@
+
+body {
+  margin: 0;
+  font-family: 'Sans-serif', Verdana;
+  background-image: url(img/bgdark33.png);
+  background-repeat: no-repeat;
+background-size: 100%;
+}
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #E8D9CD;
+}
+
+/* Line on hover effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #E8D9CD;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0; /* Positioning the sidebar on the right */
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding-top: 10px;
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: normal;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+  color: #000000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px; /* Adjusting the position of the close button */
+  font-size: 36px;
+  margin-right: 50px; /* Adjusting the margin */
+}
+.custom-heading {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 150px;
+  font-size: 62px;
+  color: #ffffff;
+  font-family: Times, "Times New Roman", Georgia, serif;
+
+}
+.search {
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.searchTerm {
+  width: 90%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  align-items: center; /* Align items vertically */
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search p {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for section with ID section-1137b51d-9bb6-4f30-b26d-5b2752eceedf */
+#section-1137b51d-9bb6-4f30-b26d-5b2752eceedf {
+  font-family: Times, "Times New Roman", Georgia, serif;
+  color: #fff; /* Light font color */
+  background-color: #333; /* Dark background color */
+  padding: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.search-input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.search-input {
+  padding-left: 15px;
+  width: 1200px; /* Use full width */
+  height: 15px;
+  border: none;
+  color:#fff;
+  background-color: transparent;
+  outline: none;
+}
+
+/* Contact section button styling */
+.contact-section {
+  background-color: transparent;
+  border: none;
+  color: #E8D9CD;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px; /* Add margin between input and button */
+}
+
+/* Search result container styling */
+.search-result-container {
+  display: none;
+}
+
+/* Solid subsection styling */
+.solid-subsection {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Address results styling */
+.address-results {
+  background-color: rgba(82,82,82,1);
+}
+
+/* Address search styling */
+.address-search {
+  background-color: rgba(82,82,82,1);
+  font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+/* Search info styling */
+.search-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Link container styling */
+.link-container {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-container:hover {
+  text-decoration: underline;
+}
+
+* { 
+  box-sizing: border-box; 
+}
+body {
+  margin: 0;
+}
+ul {
+  list-style: inherit;
+}
+.gjs-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.gjs-cell {
+  min-height: 75px;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.image-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #000000;
+}
+.image-row .image-row-header {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  margin: 0;
+  text-align: center;
+}
+.image-row .image-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 992px;
+  width: 100%;
+  height: 240px;
+}
+.image-row .image-row-container .linked-image {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+.image-row .image-row-container .linked-image img {
+  object-fit: cover;
+  min-height: 100%;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .gjs-row {
+    flex-wrap: wrap;
+  }
+  .image-row .image-row-container {
+    flex-direction: column;
+    height: 720px;
+  }
+}
